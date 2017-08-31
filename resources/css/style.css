@@ -1,5 +1,6 @@
-div{
-  border: 1px solid black;
+
+body{
+  margin:0;
 }
 header{
   display: flex;
@@ -41,10 +42,17 @@ nav span{
 a{
   color: black;
 }
+h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .container{
   display:flex;
   margin: 0 auto 78px auto;
   padding-top: 46px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 .column{
   display: flex;
@@ -53,13 +61,119 @@ a{
 }
 
 .column.large {
+  display: flex;
   width: 630px;
+  flex-direction: column;
 }
-
 .column.medium {
+  margin-top: 0;
+  display: flex;
   width: 300px;
 }
 
 .column.small {
+  display: flex;
   width: 240px;
+  flex-direction: column;
+  margin: 0;
+}
+
+.stories{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.story{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.newsbites.h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+.bite{
+  display: block;
+  padding: 11px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+}
+.imagelead{
+  background-image: url("img-story-main.png");
+  width: 630px;
+  height: 300px;
+  margin-top: 0;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.imagemid{
+  background-image: url("img-story-2.png");
+  height: 300px;
+  margin-top: 0;
+
+}
+.imagebottom{
+  background-image: url("img-story-3.png");
+  height: 300px;
+  margin-top: 0;
+
+}
+.imagecat{
+  background-image: url("img-story-1.png");
+  width: 300px;
+  height: 300px;
+  margin-top: 0;
+
+}
+.imagecookie{
+  background-image: url("img-news-bite.png");
+  width: 240px;
+  height: 200px;
+  margin-top: 0;
+}
+.image-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+footer .info{
+  align-items: center;
+}
+footer .title{
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+footer nav{
+  display: inline-block;
+  padding-left: 25px;
+}
+footer .copyright{
+  padding-right: 35px;
 }
